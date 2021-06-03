@@ -6,20 +6,21 @@
   box-sizing: border-box;
 }
 
-header{
-  background-color: #FF9A4B;
+header {
+  background-color: #ff9a4b;
   height: 50px;
 }
 
-main{
+main {
   display: flex;
   margin: 50px auto;
-  width: 960px;
+  width: 90%;
+  /* width: 960px; */
 }
 
-.box{
-  background-color: #EEEEEE;
-  margin-right:30px;
+.box {
+  background-color: #eeeeee;
+  margin-right: 30px;
   padding: 10px;
   position: relative;
   width: 300px;
@@ -29,7 +30,7 @@ main{
   margin-right: 0;
 }
 
-.image1{
+.image1 {
   height: 150px;
   background-image: url(img/flow01.png);
   background-position: bottom;
@@ -50,25 +51,34 @@ main{
   background-size: cover;
 }
 
-
-
-.logo{
+.logo {
   color: #fff;
-  background-color: #FF9A4B;
+  background-color: #ff9a4b;
   position: absolute;
   top: 0;
   left: 0;
   padding: 3px;
 }
 
-
-.title{
+.title {
   margin-top: 15x;
   margin-bottom: 5px;
 }
 
-
-footer{
-  background-color: #AAAAAA;
+footer {
+  background-color: #aaaaaa;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+  .box {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
